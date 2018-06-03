@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NotificationComponent from './components/notification';
 import './App.css';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
           <button className="btn btn-warning">Show warning Alert</button>
           <button className="btn btn-info">Show Info Alert</button>
         </div>
+        <NotificationComponent />
       </div>
     );
   }
