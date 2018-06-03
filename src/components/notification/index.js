@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { connect } from 'react-redux';
+import 'react-toastify/dist/ReactToastify.css';
 
 class NotificationComponent extends Component{
     constructor(props){
@@ -23,9 +24,8 @@ class NotificationComponent extends Component{
     }
 
     componentWillReceiveProps(newNotifications){
-        const $this = this;
         Object.keys(newNotifications.notifications).map((notificationId) => {
-            $this.generateNotification(newNotifications.notifications[notificationId]);
+            this.generateNotification(newNotifications.notifications[notificationId]);
         });
     }
 

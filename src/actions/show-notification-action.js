@@ -8,7 +8,7 @@ const removeNotification = (id) => {
   }
   
 let nextNotificationId = 0;
-export function showNotification(requestStatus) {
+export const showNotification = (requestStatus) => {
     return function (dispatch) {
       const id = nextNotificationId++;
       dispatch(addNotification(id, requestStatus));

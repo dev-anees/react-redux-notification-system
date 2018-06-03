@@ -1,5 +1,5 @@
 import axios from 'axios';
-import showNotification from '../actions/show-notification-action';
+import { showNotification } from '../actions/show-notification-action';
 import { store } from '../index';
 
 axios.interceptors.response.use(function (response) {
@@ -9,7 +9,7 @@ axios.interceptors.response.use(function (response) {
     return response;
   }, function (error) {
     store.dispatch(showNotification(
-        response.data.serverMessage
+        error.response.data.serverMessage
     ));
     return Promise.reject(error.response);
   });
