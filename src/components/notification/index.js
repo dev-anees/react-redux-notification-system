@@ -4,9 +4,6 @@ import { connect } from 'react-redux';
 import 'react-toastify/dist/ReactToastify.css';
 
 class NotificationComponent extends Component{
-    constructor(props){
-        super(props);
-    }
 
     generateNotification(notification){
         switch (notification.type.toUpperCase()) {
@@ -18,7 +15,7 @@ class NotificationComponent extends Component{
                 return toast.error(notification.message);
             case "WARNING":
                 return toast.warning(notification.message);
-            deafult:
+            default:
                 return null
         }
     }

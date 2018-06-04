@@ -43,3 +43,8 @@
   background-color: #5bc0de;
   border-color: #46b8da;
 }
+.github-button-container{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

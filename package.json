@@ -7,6 +7,7 @@
     "axios-mock-adapter": "^1.15.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
+    "react-github-button": "^0.1.11",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
     "react-toastify": "^4.0.1",
